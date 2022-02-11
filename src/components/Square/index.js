@@ -1,4 +1,4 @@
 function Square() {
-  return <div>This is square</div>;
+  return <div className="square">This is square</div>;
 }
 export default Square;

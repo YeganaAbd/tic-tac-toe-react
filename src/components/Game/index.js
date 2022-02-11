@@ -11,6 +11,7 @@ function App() {
     null,
     null,
     null,
+    null,
   ]);
   const [xTurn, setXTurn] = useState(true);
 

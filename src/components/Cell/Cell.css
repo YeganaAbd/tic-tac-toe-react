@@ -6,3 +6,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.X {
+  color: red;
+}
+
+.O {
+  color: blue;
+}

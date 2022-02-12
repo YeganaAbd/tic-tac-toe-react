@@ -1,5 +1,10 @@
 import "./Cell.css";
-function Cell() {
-  return <div className="cell">x</div>;
+function Cell({ turn, onClick }) {
+  const styleTurn = turn ? `cell ${turn}` : `cell`;
+  return (
+    <div className={styleTurn} onClick={onClick}>
+      x
+    </div>
+  );
 }
 export default Cell;

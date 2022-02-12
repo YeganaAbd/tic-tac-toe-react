@@ -2,6 +2,8 @@ import "./Game.css";
 import Board from "../Board";
 import { useState } from "react";
 import Header from "../Header";
+import Winner from "../Winner";
+import Score from "../Score";
 
 function App() {
   const [board, setBoard] = useState([
@@ -49,11 +51,20 @@ function App() {
     setXTurn(!xTurn);
   }
 
+  function restartGame() {
+    setBoard(Array(9).fill(null));
+  }
+
   return (
     <div className="App">
       <Header />
       <Board board={board} onClick={handleMove} turn={turn} />
-      <h3>Winner: {winner}</h3>
+      {/* <h3>Winner: {winner}</h3> */}
+      <Winner winner={winner} />
+      <Score winner={winner} />
+      <button className="restartBtn" onClick={restartGame}>
+        Restart
+      </button>
     </div>
   );
 }

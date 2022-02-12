@@ -1,6 +1,6 @@
 .cell {
   background-color: black;
-  border: 0.3rem solid white;
+  border: 0.1rem solid rgb(211, 208, 208);
   color: white;
   display: flex;
   justify-content: center;
@@ -11,7 +11,35 @@
   background: url("\jerry.png") center;
   background-size: 12rem 12rem;
 }
-
+@keyframes zoominoutsinglefeatured {
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.Jerry:hover {
+  animation: zoominoutsinglefeatured 1s infinite;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
 .Tom {
   background: url("\tom.jpg") center;
   background-size: 12rem 12rem;

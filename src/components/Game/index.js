@@ -1,6 +1,7 @@
 import "./Game.css";
 import Board from "../Board";
 import { useState } from "react";
+import Header from "../Header";
 
 function App() {
   const [board, setBoard] = useState([
@@ -50,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Tic Tac Toe</h1>
+      <Header />
       <Board board={board} onClick={handleMove} turn={turn} />
       <h3>Winner: {winner}</h3>
     </div>

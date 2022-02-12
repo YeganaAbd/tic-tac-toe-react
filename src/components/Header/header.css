@@ -1,0 +1,12 @@
+.header {
+  background: url("\t&j.jpg") center;
+  background-size: 100%;
+  padding: 10rem;
+  margin-bottom: 5rem;
+}
+
+.title {
+  float: left;
+  font-size: 52px;
+  color: rgb(119, 119, 115);
+}

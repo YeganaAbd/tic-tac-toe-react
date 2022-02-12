@@ -1,6 +1,6 @@
 .board {
-  height: 600px;
-  width: 600px;
+  height: 37.5rem;
+  width: 37.5rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

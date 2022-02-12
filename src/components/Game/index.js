@@ -16,7 +16,7 @@ function App() {
   ]);
   const [xTurn, setXTurn] = useState(true);
 
-  const turn = xTurn ? "X" : "O";
+  const turn = xTurn ? "Jerry" : "Tom";
   function checkWinner(cells) {
     const winnerCombination = [
       [0, 1, 2],
@@ -34,6 +34,7 @@ function App() {
         return cells[a];
       }
     }
+
     return null;
   }
   const winner = checkWinner(board);

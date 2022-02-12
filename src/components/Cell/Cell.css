@@ -7,10 +7,12 @@
   align-items: center;
 }
 
-.X {
-  color: red;
+.Jerry {
+  background: url("\jerry.png") center;
+  background-size: 12rem 12rem;
 }
 
-.O {
-  color: blue;
+.Tom {
+  background: url("\tom.jpg") center;
+  background-size: 12rem 12rem;
 }
